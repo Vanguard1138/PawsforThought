@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <main class="wrap-content">
+    <div class="card-background two-thirds-width">
+      <section class="card">
+        <h2 class="site-heading">Welcome to Paws for Thought</h2>
+      </section>
+      <section class="card landing-text-container">
+        <img class="landing-image" src="{% static 'images/dog_logo.svg' %}" alt="EventBulb Logo">
+        <p class="landing-text">The all in one app for keeping track of your dogs day to day</p>
+      </section>
+      <section class="card landing-controls">
+        <a class="button yellow" href="{% url 'events_list' %}">Walks</a>
+      </section>
+    </div>
+</main>
+{% endblock content %}
